@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS để hiển thị slide */
+    .slide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <p id="slide-number"></p>
+    <div class="slide">
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+    <button id="prev-button">Previous</button>
+    <button id="next-button">Next</button>
+  </div>
+
+  <script>
+    // Lấy tất cả các phần tử slide
+    const slides = document.querySelectorAll('.slide');
+
+    // Lấy số lượng ảnh trong slide
+    const totalSlides = slides.length;
+
+    // Lấy thẻ p để hiển thị số thứ tự ảnh
+    const slideNumberElement = document.getElementById('slide-number');
+
+    // Lấy nút previous và next
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+    // Biến lưu trữ số thứ tự hiện tại của ảnh
+    let currentSlide = 0;
+
+    // Hiển thị ảnh đầu tiên
+    slides[currentSlide].style.display = 'block';
+    updateSlideNumber();
+
+    function nextSlide() {
+      // Ẩn ảnh hiện tại
+      slides[currentSlide].style.display = 'none';
+
+      // Tăng số thứ tự ảnh
+      currentSlide++;
+
+      // Kiểm tra nếu đang ở ảnh cuối cùng, chuyển về ảnh đầu tiên
+      if (currentSlide === totalSlides) {
+        currentSlide = 0;
+      }
+
+      // Hiển thị ảnh tiếp theo
+      slides[currentSlide].style.display = 'block';
+      updateSlideNumber();
+    }
+
+    function prevSlide() {
+      // Ẩn ảnh hiện tại
+      slides[currentSlide].style.display = 'none';
+
+      // Giảm số thứ tự ảnh
+      currentSlide--;
+
+      // Kiểm tra nếu đang ở ảnh đầu tiên, chuyển đến ảnh cuối cùng
+      if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+      }
+
+      // Hiển thị ảnh trước đó
+      slides[currentSlide].style.display = 'block';
+      updateSlideNumber();
+    }
+
+    function updateSlideNumber() {
+      // Cập nhật số thứ tự ảnh hiện tại
+      const slideNumberText = `${currentSlide + 1}/${totalSlides}`;
+      slideNumberElement.textContent = slideNumberText;
+    }
+
+    // Gọi hàm nextSlide() khi ấn vào nút Next
+    nextButton.addEventListener('click', nextSlide);
+
+    // Gọi hàm prevSlide() khi ấn vào nút Previous
+    prevButton.addEventListener('click', prevSlide);
+  </script>
+</body>
+</html>

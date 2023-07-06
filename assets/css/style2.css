@@ -1,0 +1,322 @@
+/*reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-red{
+    background: #dd4b39;
+}
+
+.color-white{
+    color: #fff;
+}
+
+.background-blue{
+    background: #3B5998;
+}
+
+.margin-centre{
+    margin: 20px 39.5%;
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.btn-css{
+    padding: 7px 70px;
+
+}
+
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav > li:hover > a{
+    color: #337ab7;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#user-action > li:hover > a{
+    background-color: #000;
+    color: #ffffff;
+}
+
+#header #user-action li{
+    display: inline-block;
+}
+
+#header #nav li{
+    position: relative;
+}
+
+#nav > li > a,
+#user-action li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 70px;
+    display: inline-block;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+
+#header #logo-shop .logo-img{
+    width: 74px;
+}
+
+#nav #sub-nav li a{
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-left: 25px;
+    color: #7d8691;
+    font-weight: 100;
+}
+
+#nav #sub-nav{
+    position: absolute;
+    min-width: 165px;
+    top: 70px;
+    background-color: #3f444a;
+    height: 60px;
+    display: none;
+    list-style-type: none;
+}
+
+#nav li:hover #sub-nav{
+    display: block;
+}
+
+#nav #sub-nav li:hover a {
+    color: #337ab7;
+}
+
+#nav .pay-btn{
+    font-size: 10px;
+}
+
+#header #user-action{
+    float: right;
+}
+
+
+#header #logo-shop{
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+
+#header #user-action a{
+    margin: 10px 10px;
+    position: relative;
+    bottom: 2px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    min-width: 150px;
+}
+
+#user-action .user{
+    font-size: 20px;
+}
+
+#main #content {
+    margin-top: 170px;
+    text-align: center;
+}
+
+/* Begin content */
+
+#content .container #dk-title{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Roboto Condensed", sans-serif;
+        color: #666;
+        margin-bottom: 25px;
+}
+
+#content .container label{
+    background: #e9ecef;
+    padding: 5px 10px;
+}
+
+#content .container .form-control{
+    outline: none;
+    border: #fff;
+    padding: 7px 100px 7px 10px;
+}
+
+#content .container .form-control:focus{
+    border: 1px solid #0096ff;
+}
+
+#content .container .form-group{
+    border: 1px solid #ccc;
+    margin: 0px 39.5% 15px 39%;
+    width: 310px;
+    display: flex;
+    border-radius: 2px;
+}
+
+#content .container .form-group:last-child{
+    width: 16.8%;
+    border-radius: 10px;
+    position: relative;
+    left: 26px;
+}
+
+#content .container .btn-dk{
+    padding: 10px 100px;
+    border: #fff;
+    background-color: #3883c4;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#content .container .btn-dk:hover{
+        transform: scale(1.1);
+}
+
+#content .container .btn-dk:focus{
+    transform: scale(.9);
+}
+
+#content .container .more-title{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#content .container .more-mt{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#content .container .more-mt:hover{
+    color: #000;
+}
+
+/* Begin footer */
+#footer{
+    height: 240px;
+    background-color: #333;
+    position: relative;
+    margin-top: 120px;
+}
+
+#footer #about-title{
+    position: absolute;
+    color: #0b93a3;
+    font-weight: inherit;
+    letter-spacing: 4px;
+    left: 70px;
+    top: 20px;
+}
+
+#footer #commition{
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    color: #fff;
+}
+
+#footer #general{
+    position: absolute;
+    left: 70px;
+    top: 150px;
+    list-style: none;
+}
+
+#footer #general a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#footer #general li{
+    padding: 7px 0;
+    border-bottom: 0.5px solid #fff;
+}
+
+#footer #general a:hover{
+    color: #0096ff;
+}
+
+#footer #contain #contact-title{
+    position: absolute;
+    top: 20px;
+    left: 950px;
+    color: #fff;
+    font-weight: inherit;
+    letter-spacing: 4px;
+}
+
+
+#footer #contain #hotline{
+    position: absolute;
+    left: 950px;
+    top: 80px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer #contain #email{
+    position: absolute;
+    left: 950px;
+    top: 120px;
+    color: #fff;
+    font-size: 14px; 
+}
+
+#footer #icon-fb{
+    position: absolute;
+    top: 180px;
+    left: 950px;
+    color: #54606b;
+    text-decoration: none;
+    background-color: #1e2226;
+    padding: 5px 5px;
+}
+
+#footer #icon-ytb {
+    position: absolute;
+    top: 180px;
+    left: 1000px;
+    color: #54606b;
+    text-decoration: none;
+    background-color: #1e2226;
+    padding: 5px 5px;
+}
+
+#footer #icon-ytb:hover,
+#footer #icon-fb:hover{
+    color: white;
+}
+

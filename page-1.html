@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Game</title>
+    <link rel="icon" href="./assets/img/favicon/logo4.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/page-1.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- <div id="more-item1">
+                <i id="mobile-menu" class="ti-menu"></i>
+            </div> -->
+            <!-- Begin nav -->
+            <ul id="nav">
+                <li><a href="./index.html">Trang Chủ</a></li>
+                <li><a href="#buy-account">Mua nick</a></li>
+                <li><a href="#buy-service">Dịch vụ</a></li>
+                <li>
+                    <a href="#">Nạp tiền
+                        <i class="pay-btn ti-angle-down"></i>
+                    </a>
+                    <ul id="sub-nav">
+                        <li><a href="">Nạp thẻ cào</a></li>
+                        <li><a href="">Nạp momo tự động</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End nav -->
+            <!-- logo -->
+            <div id="logo-shop">
+                <img src="./assets/img/logo/logo1.png" alt="logo" class="logo-img">
+            </div>
+            <!-- end logo -->
+            <ul id="user-info">
+                <li><a href="./signin.html">
+                        <i class="user ti-user"></i>
+                        Đăng Nhập
+                    </a></li>
+                <li><a href="./register.html">
+                        <i class="user ti-key"></i>
+                        Đăng kí
+                    </a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h2 id="page-1-title">LIÊN QUÂN MOBILE - NICK GIÁ RẺ</h2>
+            <div style="width: 150px; height: 1px; margin: 20px auto; border-bottom: 4px solid #19b1ff;"></div>
+            <div class="search-box">
+                <div class="column-search">
+                    <label for="" class="title-search">Mã số</label>
+                    <input type="text" id="code" placeholder="Mã tài khoản">
+                </div>
+                <div class="column-search">
+                    <label for="" class="title-search">Giá tiền</label>
+                    <select name="" id="price">
+                        <option value="">Dưới 200k</option>
+                        <option value="">Từ 200k đến 500k</option>
+                        <option value="">Trên 500k</option>
+                    </select>
+                </div>
+                <div class="column-search">
+                    <label for="" class="title-search">Đăng kí</label>
+                    <select name="" id="sign">
+                        <option value="">Trắng thông tin</option>
+                        <option value="">Dính Gmail (có thể đổi)</option>
+                        <option value="">Có Sđt (có thể đổi)</option>
+                    </select>
+                </div>
+                <div class="column-search" style="border-radius: 0px;">
+                    <input type="submit" value="TÌM KIẾM" id="submit">
+                </div>
+                <div class="sort">
+                    <h4>Sắp xếp theo: </h4>
+                    <a href="#" class="selection" style="border: 1px solid #0e3eda;color: #0e3eda;">Giá tăng dần</a>
+                    <a href="#" class="selection">Giá giảm dần</a>
+                    <a href="#" class="selection">Mới cập nhật</a>
+                </div>
+            </div>
+
+            <div id="list-account">
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt1.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-001</h4>
+                        <p class="detail-1">Tướng : 30</p>
+                        <p class="detail-2">Trang phục : 40</p>
+                        <div class="price-account">
+                            <div class="price-now">30.000đ</div>
+                            <div class="price-old il-info">40.000đ</div>
+                            <div class="discount il-info">25%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : GMAIL</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt2.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-002</h4>
+                        <p class="detail-1">Tướng : 35</p>
+                        <p class="detail-2">Trang phục : 40</p>
+                        <div class="price-account">
+                            <div class="price-now">40.000đ</div>
+                            <div class="price-old il-info">50.000đ</div>
+                            <div class="discount il-info">20%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : TTT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt3.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-003</h4>
+                        <p class="detail-1">Tướng : 46</p>
+                        <p class="detail-2">Trang phục : 57</p>
+                        <div class="price-account">
+                            <div class="price-now">75.000đ</div>
+                            <div class="price-old il-info">90.000đ</div>
+                            <div class="discount il-info">17%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : SĐT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt4.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-004</h4>
+                        <p class="detail-1">Tướng : 50</p>
+                        <p class="detail-2">Trang phục : 60</p>
+                        <div class="price-account">
+                            <div class="price-now">85.000đ</div>
+                            <div class="price-old il-info">110.000đ</div>
+                            <div class="discount il-info">23%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : TTT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt5.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-005</h4>
+                        <p class="detail-1">Tướng : 60</p>
+                        <p class="detail-2">Trang phục : 65</p>
+                        <div class="price-account">
+                            <div class="price-now">100.000đ</div>
+                            <div class="price-old il-info">120.000đ</div>
+                            <div class="discount il-info">20%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : GMAIL</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt6.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-006</h4>
+                        <p class="detail-1">Tướng : 65</p>
+                        <p class="detail-2">Trang phục : 75</p>
+                        <div class="price-account">
+                            <div class="price-now">130.000đ</div>
+                            <div class="price-old il-info">150.000đ</div>
+                            <div class="discount il-info">13%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : TTT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt7.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-007</h4>
+                        <p class="detail-1">Tướng : 50</p>
+                        <p class="detail-2">Trang phục : 90</p>
+                        <div class="price-account">
+                            <div class="price-now">170.000đ</div>
+                            <div class="price-old il-info">200.000đ</div>
+                            <div class="discount il-info">15%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : Gmail</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt8.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-008</h4>
+                        <p class="detail-1">Tướng : 70</p>
+                        <p class="detail-2">Trang phục : 85</p>
+                        <div class="price-account">
+                            <div class="price-now">185.000đ</div>
+                            <div class="price-old il-info">200.000đ</div>
+                            <div class="discount il-info">8%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : TTT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt9.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-009</h4>
+                        <p class="detail-1">Tướng : 100</p>
+                        <p class="detail-2">Trang phục : 120</p>
+                        <div class="price-account">
+                            <div class="price-now">200.000đ</div>
+                            <div class="price-old il-info">260.000đ</div>
+                            <div class="discount il-info">23%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : SĐT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt10.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-001</h4>
+                        <p class="detail-1">Tướng : 114</p>
+                        <p class="detail-2">Trang phục : 130</p>
+                        <div class="price-account">
+                            <div class="price-now">220.000đ</div>
+                            <div class="price-old  il-info">280.000đ</div>
+                            <div class="discount il-info">21%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : TTT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt11.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-011</h4>
+                        <p class="detail-1">Tướng : 110</p>
+                        <p class="detail-2">Trang phục : 150</p>
+                        <div class="price-account">
+                            <div class="price-now">250.000đ</div>
+                            <div class="price-old il-info">300.000đ</div>
+                            <div class="discount il-info">17%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : TTT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+                <div class="item-account">
+                    <a href="#" class="card-body">
+                        <img src="./assets/img/account-img/pt12.jpg" alt="" class="account-img">
+                        <h4 class="account-id">ID : #LQ-012</h4>
+                        <p class="detail-1">Tướng : 114</p>
+                        <p class="detail-2">Trang phục : 170</p>
+                        <div class="price-account">
+                            <div class="price-now">300.000đ</div>
+                            <div class="price-old il-info">375.000đ</div>
+                            <div class="discount il-info">20%</div>
+                        </div>
+                        <p class="status-account">Tình trạng : SĐT</p>
+                        <button>Lưu</button>
+                        <button class="btn-js">Xem Acc</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="page-number">
+                <ul id="page-baginate">
+                    <li class="page-item lighter btn-disable" style="cursor: no-drop;">
+                        <a href=""><i class="ti-angle-double-left cursor-df" style="cursor: no-drop;"></i></a>
+                    </li>
+                    <li class="page-item lighter btn-disable " style="cursor: no-drop;">
+                        <a href=""><i class="ti-angle-left cursor-df" style="cursor: no-drop;"></i></a>
+                    </li>
+                    <li class="page-item btn-active cursor-df" style="cursor: no-drop;">
+                        <a href="" style="cursor: no-drop;">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="">2</a>
+                    </li>
+                    <li class="page-item" style="border: 0px; background: #fff; cursor: default;">
+                        <p style="font-size: 30px;">...</p>
+                    </li>
+                    <li class="page-item">
+                        <a href="">9</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="">10</a>
+                    </li>
+                    <li class="page-item lighter">
+                        <a href=""><i class="ti-angle-right"></i></a>
+                    </li>
+                    <li class="page-item lighter">
+                        <a href=""><i class="ti-angle-double-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="contain">
+                <h2 id="about-title">ABOUT US</h2>
+                <p id="commition">Hệ thống mua bán nick game tự động uy tín, nhanh gọn, an toàn tuyệt đối.</p>
+                <ul id="general">
+                    <li><a href="">GIỚI THIỆU</a></li>
+                    <li><a href="">ĐIỀU KHOẢN QUYỀN RIÊNG TƯ VÀ CHÍNH SÁCH BẢO MẬT</a></li>
+                </ul>
+                <h2 id="contact-title">CHI TIẾT LIÊN HỆ</h2>
+                <p id="hotline">Hotline: 0708007624 (8h-21h)</p>
+                <p id="email">Email: admin@tkgame.vn</p>
+                <a href="" id="icon-fb">
+                    <i class="fb ti-facebook"></i>
+                </a>
+                <a href="" id="icon-ytb">
+                    <i class="ytb ti-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div id="modal-container">
+            <div id="img-modal">
+                <img src="./assets/img/account-img/pt13.jpg" alt="" class="mySlides">
+                <img src="./assets/img/account-img/pt14.jpg" alt="" class="mySlides">
+                <img src="./assets/img/account-img/pt15.jpg" alt="" class="mySlides">
+                <button style="border-radius: 50px 0px 0px 50px;" class="prev-button ">&#10094;</button>
+                <button style="border-radius: 0 50px 50px 0;" class="next-button">&#10095;</button>
+                <p class="stt-img ti-gallery"> 
+                </p>
+            </div>
+            <div id="detail-modal">
+                <h2 class="account-title">Mã số: LQ-003
+                    <i style="cursor: pointer ;position: relative; left: 118px; top: -12px;"
+                        class="ti-close close-js"></i>
+                </h2>
+                <div style="width: 300px; height: 1px; border-bottom: 3px solid #63c6df; margin-bottom: 5px;"></div>
+                <h4 class="account-modal">Thông tin Tài khoản</h4>
+                <ul class="account-info">
+                    <li class="info-modal">
+                        <p class="info-so1 opacity-light">Đăng kí:</p>
+                        <p class="info-so1 float-right"> Sđt</p>
+                    </li>
+                    <li class="info-modal backgr-sl">
+                        <p class="info-so2 opacity-light">Số tướng:</p>
+                        <p class="info-so2 float-right"> 46</p>
+                    </li>
+                    <li class="info-modal">
+                        <p class="info-so3 opacity-light">Trang phục:</p>
+                        <p class="info-so3 float-right"> 57</p>
+                    </li>
+                    <li class="info-modal backgr-sl">
+                        <p class="info-so4 opacity-light">Tình trạng:</p>
+                        <p class="info-so4 float-right"> Còn</p>
+                    </li>
+                </ul>
+                <div class="price-modal">
+                    <p class="old-modal opacity-light">90.000đ</p>
+                    <p class="now-modal">75.000đ</p>
+                    <p class="discount">-17%</p>
+                    <p class="adj-modal">Rẻ vô đối,giá tốt nhất thị trường</p>
+                </div>
+                <div class="btn-modal">
+                    <button class="buy-js">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script đóng mở cửa sổ nhỏ -->
+    <script>
+        const showBtns = document.querySelectorAll('.btn-js')
+        const modal = document.querySelector('.js-modal')
+        const closeModal = document.querySelector('.close-js')
+
+        // function
+        function showBuy() {
+            modal.classList.add('open')
+        }
+
+        function hideBuy() {
+            modal.classList.remove('open')
+        }
+
+        // mo tag modal
+        for (const showBtn of showBtns) {
+            showBtn.addEventListener('click', showBuy)
+        }
+
+        // k nhay len dau trang
+        for (const showBtn of showBtns) {
+            showBtn.addEventListener("click", function (event) {
+                event.preventDefault()
+            });
+        }
+
+        // dong tag modal
+        closeModal.addEventListener('click', hideBuy)
+    </script>
+
+    <!-- script chuyển ảnh đổi stt -->
+    <script>
+        const slides = document.querySelectorAll('.mySlides');
+        const totalSlides = slides.length;
+        const slideNumberElement = document.querySelector('.stt-img');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+
+        let currentSlide = 0;
+
+        slides[currentSlide].style.display = 'block';
+        updateSlideNumber();
+
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+
+            currentSlide++;
+
+            if (currentSlide === totalSlides) {
+                currentSlide = 0;
+            }
+
+            slides[currentSlide].style.display = 'block';
+            updateSlideNumber();
+        }
+
+        function prevSlide() {
+            slides[currentSlide].style.display = 'none';
+
+            currentSlide--;
+
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            }
+
+            slides[currentSlide].style.display = 'block';
+            updateSlideNumber();
+        }
+
+        function updateSlideNumber() {
+            const slideNumberText = `${currentSlide + 1}/${totalSlides}`;
+            slideNumberElement.textContent = slideNumberText;
+        }
+
+        nextButton.addEventListener('click', nextSlide);
+
+        prevButton.addEventListener('click', prevSlide);
+    </script>
+</body>
+
+</html>

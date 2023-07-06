@@ -1,0 +1,386 @@
+/*reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+
+}
+
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}   
+
+#header {
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header #more-item1{
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 70px;
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav > li:hover > a{
+    color: #337ab7;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#user-info > li:hover > a{
+    background-color: #000;
+    color: #ffffff;
+}
+
+#header #user-info li{
+    display: inline-block;
+}
+
+#header #nav li{
+    position: relative;
+}
+
+#nav > li > a,
+#user-info li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 70px;
+    display: inline-block;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+
+#header #logo-shop .logo-img{
+    width: 74px;
+}
+
+#nav #sub-nav li a{
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-left: 25px;
+    color: #7d8691;
+    font-weight: 100;
+}
+
+#nav #sub-nav{
+    position: absolute;
+    min-width: 165px;
+    top: 70px;
+    background-color: #3f444a;
+    height: 60px;
+    display: none;
+    list-style-type: none;
+}
+
+#nav li:hover #sub-nav{
+    display: block;
+}
+
+#nav #sub-nav li:hover a {
+    color: #337ab7;
+}
+
+#nav .pay-btn{
+    font-size: 10px;
+}
+
+#header #user-info{
+    float: right;
+}
+
+
+#header #logo-shop{
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+
+#header #user-info a{
+    margin: 10px 10px;
+    position: relative;
+    bottom: 2px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    min-width: 150px;
+}
+
+#user-info .user{
+    font-size: 20px;
+}
+
+#menu{
+    height: 650px;
+    text-align: center;
+}
+
+#menu #menu-title{
+    padding-top: 150px;
+    font-weight: bold;
+    color: #505050;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+#menu img{
+    width: 250px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    margin: 70px 70px;
+    transition: all 1s;
+}
+
+#menu #menu-description a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+#menu #menu-description a:hover{
+    color: #f7b03c;
+}
+
+#menu #menu-description img:hover{
+    transform: scale(1.2);
+}
+
+#content{
+    height: auto;
+    text-align: center;
+}
+
+#content #content-title{
+    color: #505050;
+    padding-top: 150px;
+}
+
+#content #buy-account{
+    
+}
+
+#content #buy-account img{
+    width: 250px;
+    height: 180px;
+    padding-bottom: 20px;
+}
+
+#content #buy-account .buy{
+    display: inline-block;
+    width: 255px;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: all 0.5s;
+    border: 1px solid #ccc;
+    height: 320px;
+}
+
+#buy-account .buy #title{
+    text-decoration: none;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+#buy-account .buy p{
+    padding-top: 10px;
+}
+
+#buy-account .buy #more-info{
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 7px 30px;
+}
+
+#buy-account .buy:hover{
+    transform: scale(1.2);
+}
+
+#buy-account .buy #title:hover{
+    color: #f7b03c;
+}
+
+#buy-account .buy #more-info:hover{
+    background-color: red;
+    color: #fff;
+}
+
+#buy-service #content-title {
+    padding-top: 150px;
+}
+
+#buy-service .service{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+    transition: all 0.5s;
+    border: 1px solid #ccc;
+    height: 320px;
+    width: 255px;
+}
+
+#buy-service .service img{
+    width: 250px;
+    height: 180px;
+    padding-bottom: 20px;
+}
+
+#buy-service .service a{
+    text-decoration: none;
+    color: #000;
+}
+
+#buy-service .service #more-info{
+    color: #0096ff;
+    padding: 7px 30px;
+    border: 1px solid #0096ff;
+    border-radius: 10px;
+}
+
+#buy-service .service p{
+    padding-top: 10px;
+}
+
+#buy-service .service:hover{
+    transform: scale(1.2);
+}
+
+#buy-service .service #title:hover{
+    color: #f7b03c;
+}
+
+#buy-service .service #more-info:hover{
+    color: #fff;
+    background-color: #0096ff;
+}
+
+#content #commit {
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+#content #commit .commit-img{
+    padding: 0 30px;
+    height: 100px;
+    display: inline-block;
+}
+
+#footer{
+    height: 240px;
+    background-color: #333;
+    position: relative;
+}
+
+#footer #about-title{
+    position: absolute;
+    color: #0b93a3;
+    font-weight: inherit;
+    letter-spacing: 4px;
+    left: 70px;
+    top: 20px;
+}
+
+#footer #commition{
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    color: #fff;
+}
+
+#footer #general{
+    position: absolute;
+    left: 70px;
+    top: 150px;
+    list-style: none;
+}
+
+#footer #general a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#footer #general li{
+    padding: 7px 0;
+    border-bottom: 0.5px solid #fff;
+}
+
+#footer #general a:hover{
+    color: #0096ff;
+}
+
+#footer #contain #contact-title{
+    position: absolute;
+    top: 20px;
+    left: 950px;
+    color: #fff;
+    font-weight: inherit;
+    letter-spacing: 4px;
+}
+
+
+#footer #contain #hotline{
+    position: absolute;
+    left: 950px;
+    top: 80px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer #contain #email{
+    position: absolute;
+    left: 950px;
+    top: 120px;
+    color: #fff;
+    font-size: 14px; 
+}
+
+#footer #icon-fb{
+    position: absolute;
+    top: 180px;
+    left: 950px;
+    color: #54606b;
+    text-decoration: none;
+    background-color: #1e2226;
+    padding: 5px 5px;
+}
+
+#footer #icon-ytb {
+    position: absolute;
+    top: 180px;
+    left: 1000px;
+    color: #54606b;
+    text-decoration: none;
+    background-color: #1e2226;
+    padding: 5px 5px;
+}
+
+#footer #icon-ytb:hover,
+#footer #icon-fb:hover{
+    color: white;
+}

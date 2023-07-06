@@ -1,0 +1,33 @@
+@media (min-width: 1072px) {
+    #header #more-item1{
+        display: none;
+    }
+
+    #header{
+        height: 68px;
+    }
+}
+
+/* Mobile */
+    @media (max-width: 1071px) {
+    #header #logo-shop{
+        position: absolute;
+    }
+
+    #header #nav li a{
+        display: none;
+    }
+
+    #header #user-info li a{
+        display: none;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    #user-info{
+        display: none;
+    }
+
+}

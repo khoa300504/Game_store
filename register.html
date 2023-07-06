@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Shop Game</title>
+    <link rel="icon" href="./assets/img/favicon/icon2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Begin header -->
+        <div id="header">
+            <!-- Begin nav -->
+            <ul id="nav">
+                <li><a href="./index.html">Trang Chủ</a></li>
+                <li><a href="">Mua nick</a></li>
+                <li><a href="">Dịch vụ</a></li>
+                <li>
+                    <a href="#">Nạp tiền
+                        <i class="pay-btn ti-angle-down"></i>
+                    </a>
+                    <ul id="sub-nav">
+                        <li><a href="#">Nạp thẻ cào</a></li>
+                        <li><a href="#">Nạp momo tự động</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End nav -->
+            <!-- logo -->
+            <div id="logo-shop">
+                <img src="./assets/img/logo/logo1.png" alt="logo" class="logo-img">
+            </div>
+            <!-- end logo -->
+            <ul id="user-action">
+                <li><a href="./signin.html">
+                        <i class="user ti-user"></i>
+                        Đăng Nhập
+                    </a></li>
+                <li><a href="#">
+                        <i class="user ti-key"></i>
+                        Đăng kí
+                    </a></li>
+            </ul>
+        </div>
+        <!-- END header -->
+
+        <div id="content">
+            <div class="container">
+                <h2 id="dk-title">ĐĂNG KÍ</h2>
+                <form method="post" action="register.php">
+                    <div class="form-group">
+                        <label for="username">
+                            <i class="ti-user"></i>
+                        </label>
+                        <input type="text" id="username" class="form-control" name="username" placeholder="Tài khoản" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">
+                            <i class="ti-lock"></i>
+                        </label>
+                        <input type="text" id="password1" class="form-control" name="password1" placeholder="Mật khẩu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="ti-email"></i>
+                        </label>
+                        <input type="text" name="email" placeholder="Email bảo vệ" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn-dk" value="ĐĂNG KÍ" id="btn-register">
+                    </div>
+                </form>
+
+                <p class="more-title"> -HOẶC-</p>
+                <a style="background: #3B5998;" href="" class="more-mt">
+                    <i class="ti-facebook"></i> Facebook
+                </a>
+                <a style="background: #dd4b39;" href="" class="more-mt">
+                    <i class="ti-email"></i> Email
+                </a>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="contain">
+                <h2 id="about-title">ABOUT US</h2>
+                <p id="commition">Hệ thống mua bán nick game tự động uy tín, nhanh gọn, an toàn tuyệt đối.</p>
+                <ul id="general">
+                    <li><a href="">GIỚI THIỆU</a></li>
+                    <li><a href="">ĐIỀU KHOẢN QUYỀN RIÊNG TƯ VÀ CHÍNH SÁCH BẢO MẬT</a></li>
+                </ul>
+                <h2 id="contact-title">CHI TIẾT LIÊN HỆ</h2>
+                <p id="hotline">Hotline: 0708007624 (8h-21h)</p>
+                <p id="email">Email: admin@tkgame.vn</p>
+                <a href="" id="icon-fb">
+                    <i class="fb ti-facebook"></i>
+                </a>
+                <a href="" id="icon-ytb">
+                    <i class="ytb ti-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
